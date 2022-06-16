@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/ksa_e_invoice/static/src/js/receiptScreen.js"/>
+                <script type="text/javascript" src="/ksa_e_invoice/static/src/js/OrderReceipt.js"/>
+                <script type="text/javascript" src="/ksa_e_invoice/static/src/js/models.js"/>
+                <script type="text/javascript" src="/ksa_e_invoice/static/src/lib/qrcode.js"/>
+                <script type="text/javascript" src="/ksa_e_invoice/static/src/lib/base64.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

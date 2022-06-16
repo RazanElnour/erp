@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_customer_statement_manger,customer.statement.pdf,model_customer_statement_pdf,account.group_account_manager,1,1,1,1
+access_customer_statement_user,customer.statement.pdf,model_customer_statement_pdf,account.group_account_user,1,1,1,1
+
+access_vendor_statement_manger,vendor.statement.pdf,model_vendor_statement_pdf,account.group_account_manager,1,1,1,1
+access_vendor_statement_user,vendor.statement.pdf,model_vendor_statement_pdf,account.group_account_user,1,1,1,1
+
+access_journal_bank_statement_manger,journal.bank.statement.pdf,model_journal_bank_statement_pdf,account.group_account_manager,1,1,1,1
+access_journal_bank_statement_user,journal.bank.statement.pdf,model_journal_bank_statement_pdf,account.group_account_user,1,1,1,1
+
+access_journal_cash_statement_manger,journal.cash.statement.pdf,model_journal_cash_statement_pdf,account.group_account_manager,1,1,1,1
+access_journal_cash_statement_user,journal.cash.statement.pdf,model_journal_cash_statement_pdf,account.group_account_user,1,1,1,1

@@ -1,0 +1,29 @@
+<odoo>
+    <record id="journal_cash_statement_pdf_form" model="ir.ui.view">
+        <field name="name">Journal Statement Wizard</field>
+        <field name="model">journal.cash.statement.pdf</field>
+        <field name="arch" type="xml">
+            <form string="Vendor Details">
+                <group  col="4">
+                    <field name="from_date"/>
+                    <field name="to_date"/>
+                    <field name="journal_id"/>
+                </group>
+                <footer>
+                    <button name="print_report" string="Print"  type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="journal_cash_statement_pdf_action" model="ir.actions.act_window">
+        <field name="name">Cash  Statement</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">journal.cash.statement.pdf</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="journal_cash_statement_pdf_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem name="Cash Statement" action="journal_cash_statement_pdf_action" id="journal_cash_statement_pdf_menu1" parent="account.menu_finance_reports" />
+
+</odoo>

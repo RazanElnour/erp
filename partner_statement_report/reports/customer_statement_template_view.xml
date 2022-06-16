@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="customer_statement_pdf_report">
+            <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page" style="margin-top:-0.1%">
+                    <br/>
+                    <div style="text-align:center">
+                        <u>
+                            <t t-set="info" t-value="get_header_info"/>
+                                <div><strong>Customers Statement</strong></div>
+                                <div><strong><t t-esc="info['partner_id']"/></strong></div>
+                             <h6>
+                            <t t-if="info['start_date']">
+                             From <t t-esc="info['start_date']"/></t>
+                            <t t-if="info['end_date']"> TO  <t t-esc="info['end_date']"/>
+                            </t>
+                            </h6>
+                            <h6>
+                             Statement Date <t t-esc="info['today']"/>
+                            </h6>
+
+                        </u><br/>
+                    </div>
+                    <div style="direction:rtl" >
+            <table  dir="ctl" width="100%" style=" border: 1px solid black; ">
+                <thead style="display:table-header-group">
+                                <tr style="text-align: center;">
+                                    <td style=" border: 1px solid black;text-align: center;" width="5%" class="text-center">م</td>
+                                    <td style=" border: 1px solid black;text-align: center;" width="15%" class="text-center">التاريخ</td>
+                                    <td style=" border: 1px solid black;text-align: center;" width="15%" class="text-center">المرجع</td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center">البيان</td>
+                                    <td style=" border: 1px solid black;text-align: center;" width="15%" class="text-center">مدين</td>
+                                    <td style=" border: 1px solid black;text-align: center;" width="15%" class="text-center">دائن</td>
+                                    <td style=" border: 1px solid black;text-align: center;" width="15%" class="text-center">الرصيد</td>
+                                </tr>
+                            </thead>
+                            <t t-set="no" t-value="1"/>
+                            <t t-set="total_debit" t-value="0"/>
+                            <t t-set="total_credit" t-value="0"/>
+                            <t t-set="total_balance" t-value="0"/>
+                            <t t-foreach="get_customer" t-as="obj">
+                                <tr style="background-color:white;color:black;text-align: center;">
+                                    <td style="border: 1px solid black;position:relative;text-align:center"><t t-esc= "no"/><t t-set="no" t-value="no+1"/></td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center"><t t-esc="obj['date']"/></td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center"><t t-esc="obj['ref']"/></td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center"><t t-esc="obj['name']"/></td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center"><t t-esc="round(obj['debit'],2)"/><t t-set="total_debit" t-value="total_debit+ obj['debit']"/></td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center"><t t-esc="round(obj['credit'],2)"/><t t-set="total_credit" t-value="total_credit + obj['credit']"/></td>
+                                    <td style=" border: 1px solid black;text-align: center;" class="text-center"><t t-esc="round(obj['balance'],2)"/><t t-set="total_balance" t-value="total_balance + obj['balance']"/></td>
+                                </tr>
+                            </t>
+                            <tr style="background-color:white;color:black;text-align: center;">
+                                <td style="border: 1px solid black;text-align: center;position:relative;text-align:center" colspan="4">الاجمالي</td>
+                                <td style=" border: 1px solid black;text-align: center;"  class="text-center"><t t-esc="round(total_debit,2)"/></td>
+                                <td style=" border: 1px solid black;text-align: center;"  class="text-center"><t t-esc="round(total_credit,2)"/></td>
+                                <td style=" border: 1px solid black;text-align: center;"  class="text-center"><t t-esc="round(total_balance,2)"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </t>
+            </t>
+        </template>
+    </data>
+</odoo>

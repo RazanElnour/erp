@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_state_manager,wizard.partner.statement,model_wizard_partner,,1,1,1,1
+access_account_partner_manager,wizard.partner,model_partner_report_excel,,1,1,1,1

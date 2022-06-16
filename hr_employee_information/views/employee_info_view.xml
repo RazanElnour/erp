@@ -1,0 +1,31 @@
+<odoo>
+    <record id="employee_pdf_form" model="ir.ui.view">
+        <field name="name">employee.info.pdfWizard</field>
+        <field name="model">employee.info.pdf</field>
+        <field name="arch" type="xml">
+            <form string="Devices history">
+                <group col="4">
+                    <field name="from_date"/>
+                    <field name="date_to"/>
+                </group>
+                <footer>
+                    <button name="print_report" string="Print"  type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="empolyee_info_action" model="ir.actions.act_window">
+        <field name="name">Employee Information Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">employee.info.pdf</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="employee_pdf_form"/>
+        <field name="target">new</field>
+    </record>
+ <menuitem name="Reports"  id="empolyee_report_id" parent="hr.menu_hr_root" sequence="15" groups="hr.group_hr_user,hr.group_hr_manager"/>
+
+    <menuitem name="Employee Information Report" action="empolyee_info_action" id="empolyee_info_action_id" parent="empolyee_report_id" sequence="1" groups="hr.group_hr_user,hr.group_hr_manager"/>
+
+</odoo>
+

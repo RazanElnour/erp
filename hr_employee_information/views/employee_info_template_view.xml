@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="hr_employee_information.info_pdf_report">
+          <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row row-centered">
+                            <div class="col-md-12 col-centered">
+                                <div>
+                                    <h1 style="text-align:center;;font-size: 20px"> Employee Information </h1><br/>
+                                </div>
+
+                                <table class="table table-condensed table-bordered">
+
+                                    <tr t-foreach="get_header_info" t-as="a">
+                                        <td style="border: 1 px solid black;"  class="text-left"  colspan="2">
+                                             <strong>Date from</strong>
+                                             <td colspan="2"><t t-esc="a['date_from']"/></td>
+                                        </td>
+                                        <td style="border: 1 px solid black;"  class="text-left"  colspan="2">
+                                             <strong>Date TO</strong>
+                                             <td colspan="2"><t t-esc="a['date_to']"/></td>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <br/>
+                                <br/>
+                                <h1 style="text-align:center;;font-size: 20px">Identification ID</h1><br/>
+                                <table class="table table-condensed table-bordered" >
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center"><strong>Employee Name</strong></th>
+                                        <th class="text-center"><strong>Identification ID</strong></th>
+                                        <th class="text-center"><strong>ID Expiry Date</strong></th>
+                                    </tr>
+                                    </thead>
+                                     <tr t-foreach="get_data_from_report" t-as="obj">
+                                        <td class="text-center"><t t-esc="obj['empolyee_name']"/></td>
+                                        <td class="text-center"><t t-esc="obj['identification_id']"/></td>
+                                        <td class="text-center"><t t-esc="obj['id_expiry_date']"/></td>
+                                     </tr>
+                                    </table>
+
+                                <br/>
+                                <br/>
+                                <h1 style="text-align:center;font-size: 20px">Passport Information</h1><br/>
+                                <table class="table table-condensed table-bordered" >
+                                    <thead>
+                                    <tr>
+                                       <th class="text-center"><strong>Employee Name</strong></th>
+                                        <th class="text-center"><strong>Passport ID</strong></th>
+                                        <th class="text-center"><strong>Passport Expiry Date</strong></th>
+                                    </tr>
+                                    </thead>
+                                     <tr t-foreach="get_data_passport_from_report" t-as="z">
+                                        <td class="text-center"><t t-esc="z['empolyee_name']"/></td>
+                                        <td class="text-center"><t t-esc="z['passport_id']"/></td>
+                                        <td class="text-center"><t t-esc="z['passport_expiry_date']"/></td>
+                                     </tr>
+                                    </table>
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+            </t>
+        </t>
+    </template>
+</odoo>

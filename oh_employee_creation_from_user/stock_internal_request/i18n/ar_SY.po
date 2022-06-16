@@ -1,0 +1,752 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_internal_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-03 11:42+0000\n"
+"PO-Revision-Date: 2022-06-03 11:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.res_config_settings_view_form_inh
+msgid "<span class=\"o_form_label\">Internal Requisition</span>"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__analytic_account_id
+msgid "Analytic Account"
+msgstr "الحساب التحليلي"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__analytic_tag_ids
+msgid "Analytic Tags"
+msgstr ""
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Approval Information"
+msgstr "معلومات الموافقة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__approved
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Approved"
+msgstr "موافقة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__request_app_by
+msgid "Approved By"
+msgstr "تمن الموافقة يواسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__app_date
+msgid "Approved Date"
+msgstr "تاريخ الموافقة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__available_qty
+msgid "Available Quantity"
+msgstr "  الكميات المتوفرة في مخزنك"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__cancel
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Cancelled"
+msgstr "تم الإلغاء"
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: stock_internal_request
+#: model:ir.ui.menu,name:stock_internal_request.menu_internal_requisition_config
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__confirmed_by
+msgid "Confirmed By"
+msgstr "تم التاكيد بواسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__confirmed_date
+msgid "Confirmed Date"
+msgstr "تاريخ التأكيد"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__create_uid
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__create_uid
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__create_uid
+msgid "Created by"
+msgstr "انشئ بواسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__create_date
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__create_date
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__create_date
+msgid "Created on"
+msgstr "تم الإنشاء في"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__qty
+msgid "Current Qty"
+msgstr "الكمية الحالية"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.res_config_settings_view_form_inh
+msgid "Default Location and Operation applied to Internal Requisition"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__delivery_state
+msgid "Delivery State"
+msgstr "حالة التسليم"
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_hr_department
+msgid "Department"
+msgstr "القسم"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__dept_app_date
+msgid "Department Approval Date"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__department_manager
+msgid "Department Approved By"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_department__location_dest_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_employee__location_dest_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__location_dest_id
+msgid "Destination Location"
+msgstr "الى مخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_department__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_company__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_move__display_name
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__done
+msgid "Done"
+msgstr "تم"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_search
+msgid "Group By"
+msgstr "تجميع بواسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_department__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_employee__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_company__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_config_settings__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_move__id
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_picking__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_needaction
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_has_error
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__picking_id
+msgid "Internal Picking"
+msgstr "حجز داخلي"
+
+#. module: stock_internal_request
+#: model:ir.actions.act_window,name:stock_internal_request.action_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__internal_req_count
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_move__internal_requisition_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_picking__internal_requisition_id
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.res_config_settings_view_form_inh
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_search
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_tree
+msgid "Internal Requisition"
+msgstr "طلبات المخزن"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.res_config_settings_view_form_inh
+msgid "Internal Requisitions"
+msgstr "طلب مخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_department____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_company____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_move____last_update
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__write_uid
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__write_uid
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__write_uid
+msgid "Last Updated by"
+msgstr "أخر تعديل بوسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__write_date
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__write_date
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__write_date
+msgid "Last Updated on"
+msgstr "اخر تعديل في"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__loc_qty
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__location_id
+msgid "Location"
+msgstr "الكميات المتوفرة في الخزن المطلوب منه"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:res.groups,name:stock_internal_request.group_internal_manager_view
+msgid "Manager"
+msgstr "المدير"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__min_qty
+msgid "Min Qty"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_request_type__name
+msgid "Name"
+msgstr "الأسم"
+
+#. module: stock_internal_request
+#: code:addons/stock_internal_request/models/internal_request.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__picking_type_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_company__picking_type_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_config_settings__picking_type_id
+msgid "Operation Type"
+msgstr "نوع العملية"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__partial_delivered
+msgid "Partial Delivered"
+msgstr "تسليم جزئي"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Picking Details"
+msgstr "تفاصيل الحجز"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__picking_ids
+msgid "Pickings"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__group_id
+msgid "Procurement Group"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__product_qty
+msgid "Quantity"
+msgstr "الكمية المطلوبة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__reason_requisition
+msgid "Reason Requisition"
+msgstr "سبب الكلب"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__received_date
+msgid "Received Date"
+msgstr "تاريخ الوصول"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__name
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__reject
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Reject"
+msgstr "رفض"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__reject_by
+msgid "Reject By"
+msgstr "تم الرفض بواسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__reject_date
+msgid "Reject Date"
+msgstr "تاريخ الرفض"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Request To Stock"
+msgstr "طلب من المخزن"
+
+#. module: stock_internal_request
+#: model:ir.actions.act_window,name:stock_internal_request.action_request_type
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__request_type_id
+#: model:ir.ui.menu,name:stock_internal_request.menu_action_request_type
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_request_type_form
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_request_type_tree
+msgid "Request Type"
+msgstr "نوع الطلب"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_tree
+msgid "Requester"
+msgstr "طلب بواسطة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__requisition_id
+msgid "Requisition"
+msgstr "طلبات المخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__requisition_date
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_search
+msgid "Requisition Date"
+msgstr "تاريخ الطلب"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__requisition_deadline
+msgid "Requisition Deadline"
+msgstr "اخر موعد للطب"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__requisition_line_ids
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Requisition Lines"
+msgstr "طلبات المخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_stock_move__requisition_line_id
+msgid "Requisition Order Line"
+msgstr "طلبات المخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__requisition_responsible
+msgid "Requisition Responsible"
+msgstr "مسؤول من الطلب"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_res_company_form_inherit
+msgid "Requisition Settings"
+msgstr "إعدادات الطلب"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__move_ids
+msgid "Reservation"
+msgstr "حجز"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__activity_user_id
+msgid "Responsible User"
+msgstr "السؤول"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: stock_internal_request
+#: code:addons/stock_internal_request/models/internal_request.py:0
+#, python-format
+msgid "Selected Branch Warehouse Has no enough zero Quantity from %s"
+msgstr ""
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Set To Draft"
+msgstr "إرجاع إالى مسودة"
+
+#. module: stock_internal_request
+#: model:ir.actions.act_window,name:stock_internal_request.action_internal_requisition_config_settings
+#: model:ir.ui.menu,name:stock_internal_request.menu_internal_requisition_general_settings
+msgid "Settings"
+msgstr "إعدادات"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__origin
+msgid "Source Document"
+msgstr "المستند الأصلي"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__location_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_company__location_id
+#: model:ir.model.fields,field_description:stock_internal_request.field_res_config_settings__location_id
+msgid "Source Location"
+msgstr "من مخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__state
+msgid "State"
+msgstr "الجالة"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_stock_move
+msgid "Stock Move"
+msgstr "حركة المخزون"
+
+#. module: stock_internal_request
+#: model:ir.module.category,name:stock_internal_request.module_category_stock_request_ID
+#: model:ir.ui.menu,name:stock_internal_request.menu_requisition_root
+msgid "Stock Request"
+msgstr "طلبات المخزن"
+
+#. module: stock_internal_request
+#: model:ir.ui.menu,name:stock_internal_request.menu_internal_requisition_action
+msgid "Stock Requisition"
+msgstr "طلبات المخزن"
+
+#. module: stock_internal_request
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Submit"
+msgstr "تأكيد"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__company_id
+msgid "The default company for this user."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:res.groups,comment:stock_internal_request.group_internal_department_manager_view
+msgid "The user will see all the record of his department."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:res.groups,comment:stock_internal_request.group_internal_manager_view
+msgid "The user will see all the record."
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__location_id
+msgid ""
+"This is the default source location when you create a picking manually with "
+"this operation type. It is possible however to change it or that the routes "
+"put another location. If it is empty, it will check for the supplier "
+"location on the partner. "
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_stock_picking
+#: model_terms:ir.ui.view,arch_db:stock_internal_request.view_internal_request_form
+msgid "Transfer"
+msgstr "الشحنة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: stock_internal_request
+#: code:addons/stock_internal_request/models/internal_request.py:0
+#, python-format
+msgid ""
+"Unable to cancel request order %s as some receptions have already been done."
+msgstr "لايمكن إالغاء طلب تم تنفيذه"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition_line__product_uom
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:res.groups,name:stock_internal_request.group_internal_department_manager_view
+msgid "User"
+msgstr "المستخدم"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__waiting_approve
+msgid "Waiting Approve"
+msgstr "إنتظار الموافقة"
+
+#. module: stock_internal_request
+#: model:ir.model.fields.selection,name:stock_internal_request.selection__internal_requisition__state__requested_stock
+msgid "Waiting To Delivery"
+msgstr "إنتظار التسليم"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__warehouse_id
+msgid "Warehouse"
+msgstr "من مخزن"
+
+#. module: stock_internal_request
+#: model:ir.model.fields,field_description:stock_internal_request.field_internal_requisition__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model.fields,help:stock_internal_request.field_internal_requisition__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: stock_internal_request
+#: code:addons/stock_internal_request/models/internal_request.py:0
+#, python-format
+msgid "You can not delete no draft record!"
+msgstr "لايمكن إالغاء طلب ليس في حالة مسودة"
+
+#. module: stock_internal_request
+#: code:addons/stock_internal_request/models/internal_request.py:0
+#, python-format
+msgid "You can not submit the requisition without fill lines"
+msgstr "يجب إدخال المنتجات المطلوبة قبل التأكيد"
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_internal_requisition
+msgid "internal.requisition"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_internal_requisition_line
+msgid "internal.requisition.line"
+msgstr ""
+
+#. module: stock_internal_request
+#: model:ir.model,name:stock_internal_request.model_request_type
+msgid "request.type"
+msgstr ""

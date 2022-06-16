@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+
+		<report
+				id="customer_statement_pdf_report_id"
+				model="account.move.line"
+				string="Customer Statement Report"
+				report_type="qweb-pdf"
+				name="partner_statement_report.customer_statement_pdf_report"
+				file="partner_statement_report.customer_statement_pdf_report"
+				menu="False"
+		/>
+		<report
+				id="vendor_statement_pdf_report_id"
+				model="account.move.line"
+				string="Vendor Statement Report"
+				report_type="qweb-pdf"
+				name="partner_statement_report.vendor_statement_pdf_report"
+				file="partner_statement_report.vendor_statement_pdf_report"
+				menu="False"
+		/>
+		<report
+				id="jornal_bank_statement_pdf_report_id"
+				model="account.move.line"
+				string="Bank Statement Report"
+				report_type="qweb-pdf"
+				name="partner_statement_report.bank_statement_pdf_report"
+				file="partner_statement_report.bank_statement_pdf_report"
+				menu="False"
+		/>
+		
+                 <report
+				id="jornal_cash_statement_pdf_report_id"
+				model="account.move.line"
+				string="Bank Statement Report"
+				report_type="qweb-pdf"
+				name="partner_statement_report.cash_statement_pdf_report"
+				file="partner_statement_report.cash_statement_pdf_report"
+				menu="False"
+		/>
+		
+
+
+	
+
+				
+	</data>
+</odoo>

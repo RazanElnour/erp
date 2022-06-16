@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<report
+				id="account_statement_pdf_report_id"
+				model="account.move.line"
+				string="Account Statement Report"
+				report_type="qweb-pdf"
+				name="is_penotee_accounting.account_statement_pdf_report"
+				file="is_penotee_accounting.account_statement_pdf_report"
+				menu="False"
+		/>
+		<record id="account_statement_pdf_report_id" model="ir.actions.report">
+			<field name="paperformat_id" ref="is_penotee_accounting.paperformat_penotee"/>
+		</record>
+
+		<report
+				id="customer_statement_pdf_report_id"
+				model="account.move.line"
+				string="Customer Statement Report"
+				report_type="qweb-pdf"
+				name="is_penotee_accounting.customer_statement_pdf_report"
+				file="is_penotee_accounting.customer_statement_pdf_report"
+				menu="False"
+		/>
+		<record id="customer_statement_pdf_report_id" model="ir.actions.report">
+			<field name="paperformat_id" ref="is_penotee_accounting.paperformat_penotee"/>
+		</record>
+
+		<report
+				id="vendor_statement_pdf_report_id"
+				model="account.move.line"
+				string="Vendor Statement Report"
+				report_type="qweb-pdf"
+				name="is_penotee_accounting.vendor_statement_pdf_report"
+				file="is_penotee_accounting.vendor_statement_pdf_report"
+				menu="False"
+		/>
+		<record id="vendor_statement_pdf_report_id" model="ir.actions.report">
+			<field name="paperformat_id" ref="is_penotee_accounting.paperformat_penotee"/>
+		</record>
+                            <report
+				id="group_statement_pdf_report_ids"
+				model="account.move.line"
+				string="Group Statement Report"
+				report_type="qweb-pdf"
+				name="is_penotee_accounting.group_statement_pdf_report_id"
+				file="is_penotee_accounting.group_statement_pdf_report_id"
+				menu="False"
+		                   />
+
+	</data>
+</odoo>

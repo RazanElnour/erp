@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+         <report
+                id="report_employee_pdf_id"
+                model="hr.employee"
+                string="Employee Information Report"
+                report_type="qweb-pdf"
+                name="hr_employee_information.info_pdf_report"
+                file="hr_employee_information.info_pdf_report"
+                menu="False"
+        />
+        
+
+
+    </data>
+</odoo>

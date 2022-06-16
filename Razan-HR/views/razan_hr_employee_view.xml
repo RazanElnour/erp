@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="hr_employee_inherit_formm_view">
+      <field name="name">hr.employee.formm.view</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+
+            <field name="job_title" position="replace" >
+                <field name="english_name" options="{'color_field': 'color', 'no_create_edit': True}" placeholder="Employee Name" required="True" />
+            </field>
+
+            <field name="category_ids" position="before" >
+                <field name="employee_no" options="{'color_field': 'color', 'no_create_edit': True}" placeholder="Employee No" widget="no" />
+            </field>
+
+
+            <xpath expr="//field[@name='address_id']" position="attributes">
+               <attribute name="string">الشركة /الادارة</attribute>
+             </xpath>
+             <xpath expr="//field[@name='identification_id']" position="attributes">
+               <attribute name="string">رقم الهوية</attribute>
+             </xpath>
+              <xpath expr="//field[@name='identification_id']" position="attributes">
+               <attribute name="string">دولة الميلاد</attribute>
+             </xpath>
+             <xpath expr="//field[@name='emergency_contact']" position="attributes">
+               <attribute name="string">شخص يمكن الرجوع اليه</attribute>
+             </xpath>
+              <xpath expr="//field[@name='visa_no']" position="attributes">
+               <attribute name="string">رقم الحدود</attribute>
+             </xpath>
+        <!--     
+             <field name="km_home_work" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field>   -->
+               <field name="place_of_birth" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field>  
+               <field name="visa_expire" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field> 
+            
+             <field name="gender" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field> 
+
+             <field name="phone" position="after" >
+                <field name="gender"/>
+
+             </field>
+
+               <field name="visa_no" position="after" >
+                <field name="visa_expire"/>
+            
+             </field>
+
+
+
+              <field name="country_id" position="before" >
+                <field name="tt"/>
+             </field>
+           
+           <field name="certificate" position="before" >
+                <field name="certificate1"/>
+             </field>
+            
+             <field name="certificate" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field> 
+
+                <field name="study_school" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field> 
+
+             <!--    <field name="children" position="attributes" >
+               <attribute name="invisible">1</attribute>        
+             </field>  -->
+
+             <xpath expr="//field[@name='user_id']" position="attributes">
+               <attribute name="string">مستخدم مرتبط بموظف</attribute>
+             </xpath>
+
+             <field name="user_id" position="after" >
+                <field name="user_id"/>
+             </field>
+
+             <field name="marital" position="after" >
+                <field name="childrenn"/>
+             </field>
+
+
+         <field name="marital"/>
+          <field name="childrenn" attrs="{'invisible': [('marital', 'in', ['single'])]}" />
+
+              <xpath expr="//field[@name='user_id']" position="attributes">
+               <attribute name="string">مستخدم مرتبط بمدير</attribute>
+             </xpath>     
+                        
+
+                                       
+          </field> 
+    </record>
+  </data>
+</odoo>
+  
+          <!-- 
+         <field name="address_id" position="attributes" >
+            <attribute name="readonly">1</attribute>        
+        </field>  -->
+          <!-- 
+         <field name="address_id" position="attributes" >
+            <attribute name="readonly , invisible,required">1</attribute>        
+        </field>  -->
+        
+       <!--  <field name="name" position="before">
+            <field name="attachmentT_ids" widget="many2many_binary" class="oe_inline" />
+                 </field>
+ -->
+
+<!-- 
+            <xpath expr="//field[@name='km_home_work']" position="after">
+               <attribute name="string">gender</attribute>
+             </xpath>
+ -->
+             
+
+      
+
+
